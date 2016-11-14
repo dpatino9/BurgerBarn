@@ -1,8 +1,8 @@
-<h1>Let's eat some burgers!</h1>
+<h1>Eat some burgers at the Barn!</h1>
 
 <div class="row">
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center" id="imgBlock">
-        <img src="https://i.giphy.com/AAfpHO80onDYk.gif" alt="burger-mouth" id="mouth"/>
+        <img src="https://giphy.com/gifs/suNxrJ7Gpudd6/html5" alt="burger-mouth" id="mouth"/>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
     <h2>Burgers Available to Devour</h2>
@@ -11,7 +11,7 @@
             {{#each burgers}}
             {{#unless this.devoured}}
             <li>
-        {{!-- {{this.id}} --}}
+
             {{this.burger_name}}
             <div class="devButton">
                 <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
@@ -32,7 +32,7 @@
                 {{#each burgers}}
                 {{#if this.devoured}}
                     <li>
-                        {{!-- {{this.id}} --}}
+                        
                         {{this.burger_name}}
                     </li>
                 {{/if}}
